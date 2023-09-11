@@ -6,9 +6,9 @@
   text-decoration: none;
 }
 
-body {
-  background-color:#000000da;
-}
+/* body {
+  background-image: linear-gradient(to right bottom, #5a2b44, #522d4a, #49304f, #3f3251, #353452, #303c5b, #294462, #204c68, #155d76, #086f81, #128188, #2c928b);
+} */
 
 .first-page {
   background-image: url(./img/bg.jpg);
@@ -32,6 +32,8 @@ body {
 
 
 nav {
+  /* top: 0; */
+  /* position: fixed; */
   /* width: 17rem; */
   background-color: rgba(0, 0, 0, 0.486);
   backdrop-filter: blur(.4rem);
@@ -141,6 +143,13 @@ nav {
   color: #c06c84;
   text-decoration: none;
 } */
+
+/* About */
+#about{
+  background-image: linear-gradient(to right bottom, #5a2b44, #522d4a, #49304f, #3f3251, #353452, #303c5b, #294462, #204c68, #155d76, #086f81, #128188, #2c928b);
+
+}
+
 
 /* Our Team */
 .box {
