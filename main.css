@@ -6,9 +6,9 @@
   text-decoration: none;
 }
 
-/* body {
+body {
   background-image: linear-gradient(to right bottom, #5a2b44, #522d4a, #49304f, #3f3251, #353452, #303c5b, #294462, #204c68, #155d76, #086f81, #128188, #2c928b);
-} */
+}
 
 .first-page {
   background-image: url(./img/bg.jpg);
