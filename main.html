@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <!-- <link rel="stylesheet" href="hackathon.css"> -->
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
     <!-- <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
     <link rel=“stylesheet” href=“https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css”
         integrity=“sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l” crossorigin=“anonymous”> -->
@@ -24,12 +26,13 @@
     <main class="first-page">
         <header class="md:bg-gray-800 " id="header">
             <nav class="flex flex-wrap items-center justify-between h-16 w-full ">
-                <div class="text-emerald-600 font-semibold flex items-center ml-5 cursor-pointer" >
+                <div class="text-emerald-600 font-semibold flex items-center ml-5 cursor-pointer">
                     <img src="/img/kar.png">
                     <h2 class="text-2xl">Karmakshetra</h2>
                 </div>
                 <div class="flex md:hidden mr-3 cursor-pointer">
-                    <iconify-icon class="mobile-nav-icon" icon="uis:bars" width="30" style="color: white;"></iconify-icon>
+                    <iconify-icon class="mobile-nav-icon" icon="uis:bars" width="30"
+                        style="color: white;"></iconify-icon>
                     <!-- <iconify-icon class="close hidden" icon="iconamoon:close-bold"></iconify-icon> -->
                 </div>
                 <div class="md:flex mobile-navbar text-emerald-600 text-lg ">
@@ -38,7 +41,9 @@
                     <a class="mr-8" href="#venues">Venue</a>
                     <a class="mr-8" href="#themes">Themes</a>
                     <a class="mr-8" href="#prz">Prizes</a>
+                    <a class="mr-8" href="#sponsors">Sponsors</a>
                     <a class="mr-8" href="#cnt">Contact Us</a>
+                    <a class="mr-8" href="coc.html">Code of Conduct</a>
                 </div>
             </nav>
         </header>
@@ -50,7 +55,8 @@
                     <div class="self-start p-4">
                         <h6 class="Bytemonk-present ">Bytemonk presents:</h6>
                     </div>
-                    <h3 class="karmakshetra-body text-center">Karmakshetra</h3>
+                    <h3 class="karmakshetra-body text-center
+                    text-4xl font-bold text-red-500">Karmakshetra</h3>
                     <p class="text-white mt-4">
                         The Hackathon is not just an event; it's a journey of exploration, innovation, and
                         camaraderie.
@@ -59,17 +65,20 @@
                     </p>
                     <div class="mt-6">
 
-                        <button
+                        <!-- <button
                             class="btn-enroll text-white bg-red-600 border-30 py-3 px-4 hover:bg-gray-600 rounded text-lg">Enroll
-                            Now...</button>
+                            Now...</button> -->
+                        <div class="apply-button" data-hackathon-slug="karmakshetra" data-button-theme="light"
+                            style="height: 44px; width: 312px">Apply with Devfolio</div>
                     </div>
+
                 </div>
 
                 <div class="md:w-1/2">
-                    <img class="md:w-full w-80 rounded" alt="hero" src="/img/12.png">
+                    <img class="md:w-full w-80 rounded" alt="hero" src="/img/bg3.jpg">
                 </div>
             </div>
-    </section>
+        </section>
 
     </main>
 
@@ -358,6 +367,36 @@
                     </div>
                 </section>
 
+            </div>
+        </div>
+    </section>
+    <section id="sponsors flex flex-col justify-center items-center ">
+        <div class="bg-gray-700">
+            <div class="gold-sponsors flex flex-col justify-center items-center  p-2">
+                <h1 class="text-gray-500 text-3xl p-4">Gold Sponsors</h1>
+                <div class="w-60 m-4">
+                <img src="/img/Devfolio_Logo-White.png" alt="">
+                </div>
+            </div>
+            <div class="silver-sponsors flex flex-col justify-center items-center  p-2">
+                <h1 class="text-gray-500 text-3xl p-4">Silver Sponsors</h1>
+                <div class="w-60 m-4">
+                <img src="/img/square-white-logo-with-bottom-text-black-red.png" alt="">
+
+                </div>
+            </div>
+
+            <div class="bronze-sponsors  flex flex-col justify-center items-center p-5">
+                <h1 class="text-gray-500 text-3xl p-5">Bronze Sponsors</h1>
+                <div class="flex flex-wrap justify-center items-center space-x-10">
+                    <div class="w-60 m-4"><img src="/img/Filecoin Coloured White Text.png" alt=""></div>
+                    <div class="w-60 m-4"> <img src="/img/Solana Dark.png" alt=""></div>
+                    <div class="w-60 m-4"><img src="/img/Polygon_Logo-White.png" alt=""></div>
+                    <div class="w-60 m-4">
+                        <img src="/img/Replit-Dark-Background.png" alt="">
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -908,7 +947,7 @@
         let mobileNav = document.querySelector('.mobile-navbar');
         let header = document.getElementById('header');
         let mobileNavIcon = document.querySelector('.mobile-nav-icon');
-        let closeIcon=document.querySelector('.close');
+        let closeIcon = document.querySelector('.close');
         // console.log(mobileNavIcon.getAttribute('class'))
 
 
@@ -916,8 +955,8 @@
             mobileNav.classList.toggle('active');
             // alert(mobileNav.getAttribute('class'))
             mobileNav.style.display = "flex";
-            if (mobileNav.getAttribute('class')=='md:flex mobile-navbar text-emerald-600 text-lg active') {
-            // mobileNav.style.display = "none";
+            if (mobileNav.getAttribute('class') == 'md:flex mobile-navbar text-emerald-600 text-lg active') {
+                // mobileNav.style.display = "none";
             }
 
             // closeIcon.classList.add('flex')
