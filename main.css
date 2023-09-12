@@ -9,6 +9,11 @@
 /* body {
   background-image: linear-gradient(to right bottom, #5a2b44, #522d4a, #49304f, #3f3251, #353452, #303c5b, #294462, #204c68, #155d76, #086f81, #128188, #2c928b);
 } */
+
+section:nth-child(odd){
+  background:#7b24c4 ;
+}
+
 /* Navbar */
 @media (max-width: 952px) {
   .navicon {
@@ -61,6 +66,16 @@
   }
 }
 
+nav {
+  /* top: 0; */
+  /* position: fixed; */
+  /* width: 17rem; */
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.77);
+  backdrop-filter: blur(0.4rem);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.37);
+  border: 0.1rem solid rgba(255, 255, 255, 0.18);
+}
 
 
 
@@ -73,11 +88,20 @@
   background-attachment: fixed;
 }
 
+.karmakshetra-body{
+  font-family: 'samarkan',sans-serif;
+  margin: 2rem;
+  text-shadow: 8px 12px 9px rgba(0, 0, 0, 0.37);
+}
+
+
+
+
 .Bytemonk-present {
-  color: #73b1b9;
+  color: #f0f0d5;
   font-family: "Fira Code", monospace;
-  font-weight: 800;
-  font-size: 1.5rem;
+  font-weight: 900;
+  font-size: 1.8rem;
   /* margin: 0 0 0 35%; */
   text-align: left;
   /* white-space: nowrap; */
@@ -86,18 +110,16 @@
   /* animation: type 2s steps(40, end) forwards; */
 }
 
-nav {
-  /* top: 0; */
-  /* position: fixed; */
-  /* width: 17rem; */
-  background-color: rgba(0, 0, 0, 0.486);
-  backdrop-filter: blur(0.4rem);
-  box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.37);
-  border: 0.1rem solid rgba(255, 255, 255, 0.18);
+.hackathon-descrip{
+  color: #EFF0F4;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 30px;
 }
 
 .third-page {
-  background-image: url(./img/bg4.jpg);
+  /* background-image: url(./img/bg4.jpg); */
+  background-color: #7b24c4;
   background-size: cover;
   background-attachment: fixed;
 }
