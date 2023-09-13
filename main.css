@@ -15,7 +15,7 @@ section:nth-child(odd){
 }
 
 /* Navbar */
-@media (max-width: 952px) {
+@media (max-width: 767px) {
   .navicon {
     width: 1.125em;
     height: .125em;
@@ -29,7 +29,7 @@ section:nth-child(odd){
     height: 100%;
     transition: all .2s ease-out;
     content: '';
-    background: #aebac3;
+    background: #e2dc5a;
   }
 
   .navicon::before {
@@ -76,6 +76,45 @@ nav {
   box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.37);
   border: 0.1rem solid rgba(255, 255, 255, 0.18);
 }
+
+.dropbtn {
+  
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.77);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: 60px;
+  /* left: -5px; */
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: rgb(244, 244, 156);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  /* background-color: #d3c802 */
+  color: #d3c802;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 
 
@@ -366,6 +405,9 @@ nav {
   font-weight: 600;
   letter-spacing: 1px;
   text-align: center;
+}
+.about-descrip{
+  letter-spacing: 2px;
 }
 /* #about{
   background-image: linear-gradient(to right bottom, #5a2b44, #522d4a, #49304f, #3f3251, #353452, #303c5b, #294462, #204c68, #155d76, #086f81, #128188, #2c928b);
