@@ -10,8 +10,8 @@
   background-image: linear-gradient(to right bottom, #5a2b44, #522d4a, #49304f, #3f3251, #353452, #303c5b, #294462, #204c68, #155d76, #086f81, #128188, #2c928b);
 } */
 
-section:nth-child(odd){
-  background:#7b24c4 ;
+section:nth-child(odd) {
+  background: #7b24c4;
 }
 
 /* Navbar */
@@ -40,28 +40,28 @@ section:nth-child(odd){
     top: -5px;
   }
 
-  .menu-btn:not(:checked) ~ .menu {
+  .menu-btn:not(:checked)~.menu {
     display: none;
   }
 
-  .menu-btn:checked ~ .menu {
+  .menu-btn:checked~.menu {
     display: block;
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon {
+  .menu-btn:checked~.menu-icon .navicon {
     background: transparent;
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon::before {
+  .menu-btn:checked~.menu-icon .navicon::before {
     transform: rotate(-45deg);
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon::after {
+  .menu-btn:checked~.menu-icon .navicon::after {
     transform: rotate(45deg);
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon::before,
-  .menu-btn:checked ~ .menu-icon .navicon::after {
+  .menu-btn:checked~.menu-icon .navicon::before,
+  .menu-btn:checked~.menu-icon .navicon::after {
     top: 0;
   }
 }
@@ -78,7 +78,7 @@ nav {
 }
 
 .dropbtn {
-  
+
   border: none;
   cursor: pointer;
 }
@@ -93,7 +93,7 @@ nav {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.77);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   top: 60px;
   /* left: -5px; */
   z-index: 999;
@@ -127,8 +127,8 @@ nav {
   background-attachment: fixed;
 }
 
-.karmakshetra-body{
-  font-family: 'samarkan',sans-serif;
+.karmakshetra-body {
+  font-family: 'samarkan', sans-serif;
   margin: 2rem;
   text-shadow: 8px 12px 9px rgba(0, 0, 0, 0.37);
 }
@@ -149,7 +149,7 @@ nav {
   /* animation: type 2s steps(40, end) forwards; */
 }
 
-.hackathon-descrip{
+.hackathon-descrip {
   color: #EFF0F4;
   text-align: justify;
   letter-spacing: 2px;
@@ -163,9 +163,209 @@ nav {
   background-attachment: fixed;
 }
 
-/* prizes */
+/* Venue */
 
-.prizes {
+.venue-heading,
+.organiser-heading,
+.our-team {
+  color: gold;
+  text-shadow: 2px 2px 1px rgba(0, 12, 174, 0.47);
+}
+
+
+/* prizes */
+/* Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+} */
+
+
+
+.artboard {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  height: 100%;
+  position: relative;
+}
+/* @media (max-width: 37.5em) {
+  .artboard {
+    padding: 1rem;
+  }
+} */
+
+.card {
+  flex: initial;
+  position: relative;
+  height: 15rem;
+  width: 18rem;
+  perspective: 200rem;
+  /* margin: 2rem; */
+}
+.card__side {
+  height: 15rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* We don't want to see the back part of the element. */
+  backface-visibility: hidden; /* We don't want to see the back part of the element. */
+  border-radius: 3px;
+  overflow: hidden; /* The image is overflowing the parent. */
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+}
+.card__side--front {
+  background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.7)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+}
+.card__side--back {
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card__theme {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 54%;
+  width: 90%;
+  text-align: center;
+}
+.card__theme-box {
+  color: #fff;
+  margin-bottom: 8rem;
+}
+.card__subject {
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 0.8rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.card__title {
+  font-family: "VT323", monospace;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.card__cover {
+  position: relative;
+  background-size: cover;
+  height: 14rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+}
+.card__heading {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+.card__heading-span {
+  font-family: "VT323", monospace;
+  font-size: 4.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  color: #fff;
+}
+.card__details {
+  font-family: "Inconsolata", monospace;
+  padding: 4rem 2rem;
+}
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.card__details ul li {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+/* @media only screen and (max-width: 37.5em), only screen and (hover: none) {
+  .card {
+    height: auto;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+  }
+  .card__side {
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+  .card__side--front {
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+  .card__side--back {
+    transform: rotateY(0);
+  }
+  .card:hover .card__side--front {
+    transform: rotateY(0);
+  }
+  .card__details {
+    padding: 3rem 2rem;
+  }
+  .card__theme {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 5rem 4rem 1.5rem 4rem;
+    text-align: right;
+  }
+  .card__theme-box {
+    margin-bottom: 1.5rem;
+  }
+  .card__title {
+    font-size: 4rem;
+  }
+} */
+
+
+/* .prizes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,9 +380,9 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
-  
- 
+
+
+
 }
 
 .drop {
@@ -190,10 +390,10 @@ nav {
   width: 350px;
   height: 350px;
   box-shadow:
-      inset 20px 20px 20px rgba(0, 0, 0, 0.05),
-      25px 35px 20px rgba(0, 0, 0, 0.05),
-      25px 30px 30px rgba(0, 0, 0, 0.05),
-      inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
   transition: 0.5s ease-in-out;
   display: flex;
   justify-content: center;
@@ -258,9 +458,9 @@ nav {
   color: var(--clr);
   background: #EFF0F4;
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
-      inset -2px -5px -10px rgba(255, 255, 255, 1),
-      15px 15px 10px rgba(0, 0, 0, 0.05),
-      15px 10px 15px rgba(0, 0, 0, 0.025);
+    inset -2px -5px -10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0, 0, 0, 0.05),
+    15px 10px 15px rgba(0, 0, 0, 0.025);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -303,19 +503,15 @@ nav {
 
 @media (max-width: 600px) {
   .drop {
-      width: 280px;
-      height: 280px;
+    width: 280px;
+    height: 280px;
   }
-}
+} */
 
 
 
-.venue {
-  text-shadow: 2px 2px 1px rgba(0, 12, 174, 0.47);
-}
 
-
-.active {
+/* .active {
   background-color: rgb(0, 0, 0);
   height: 100vh;
   width: 100vw;
@@ -324,7 +520,7 @@ nav {
   gap: 5%;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* Pricing Section */
 
@@ -332,21 +528,26 @@ nav {
 
 .theme-container .card {
   position: relative;
-  max-width: 300px;
-  height: 215px;
+  max-width: 18rem;
+  height: 12rem;
   background-color: #fff;
-  margin: 30px 10px;
+  margin: 3rem 1rem;
   padding: 20px 15px;
-
   display: flex;
   flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
   border-radius: 15px;
 }
 
 .theme-container .card:hover {
-  height: 320px;
+  height: 280px;
+
+  .themes-card-heading {
+    display: none;
+  }
 }
 
 .theme-container .card .image {
@@ -355,35 +556,42 @@ nav {
   height: 260px;
 
   top: -40%;
-  left: 8px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  left: 13px;
+  /* box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.2); */
   z-index: 1;
 }
 
 .theme-container .card .image img {
-  max-width: 100%;
+  /* width: 10rem; */
+  width: 230px;
+  height: 150px;
   border-radius: 15px;
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.2);
+
 }
 
 .theme-container .card .content {
   position: relative;
-  top: -140px;
+  bottom: 94px;
   padding: 10px 15px;
   color: #111;
-  text-align: center;
-
+  /* text-align: center; */
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-#cover {
-  font-family: "Times New Roman", Times, serif;
-  color: #3e5151;
-  font-size: larger;
-  font-style: normal;
+.theme-container .card .content h3 {
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.theme-container .card .content p {
+  letter-spacing: 1px;
   font-weight: 400;
 }
+
 
 .theme-container .card:hover .content {
   margin-top: 30px;
@@ -392,23 +600,31 @@ nav {
   transition-delay: 0.2s;
 }
 
-#themes {
-  text-align: center;
-  color: #c06c84;
-  text-decoration: none;
+.themes-card-heading {
+  position: absolute;
+  bottom: 25px;
+  left: 70px;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
+
+
 /* About */
-#about .about-heading{
+#about .about-heading,
+.mentor-heading {
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 1px;
   text-align: center;
 }
-.about-descrip{
+
+.about-descrip {
   letter-spacing: 2px;
 }
+
 /* #about{
   background-image: linear-gradient(to right bottom, #5a2b44, #522d4a, #49304f, #3f3251, #353452, #303c5b, #294462, #204c68, #155d76, #086f81, #128188, #2c928b);
 
@@ -466,7 +682,7 @@ nav {
   transition: all 0.3s;
 }
 
-.box .heart-btn:checked ~ .heart::before {
+.box .heart-btn:checked~.heart::before {
   color: #e41934;
 }
 
@@ -521,6 +737,3 @@ nav {
   } */
 
 /* Sponsors */
-#sponsors {
-  background-color: #141414;
-}

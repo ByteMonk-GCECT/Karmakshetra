@@ -39,7 +39,7 @@
             </label>
 
             <ul
-                class="menu border-b md:border-none flex justify-end items-center list-reset m-0 w-full md:w-auto text-sm xl:text-base pr-10 xl:pr-16 xl:space-x-6">
+                class="menu border-b md:border-none flex justify-end items-center list-reset m-0 w-full md:w-auto text-sm xl:text-base pr-3 xl:pr-16 xl:space-x-6">
                 <li class="border-t md:border-none">
                     <a href="#home"
                         class="block md:inline-block px-4 py-3 no-underline text-yellow-100 hover:text-yellow-500">Home</a>
@@ -55,11 +55,15 @@
                         class="block md:inline-block px-4 py-3 no-underline text-yellow-100 hover:text-yellow-500 ">Venue</a>
                 </li>
                 <li class="border-t md:border-none">
-                    <a href="#prz"
+                    <a href="#themes"
                         class="block md:inline-block px-4 py-3 no-underline text-yellow-100 hover:text-yellow-500 ">Themes</a>
                 </li>
                 <li class="border-t md:border-none">
-                    <a href="#cnt"
+                    <a href="#prizes"
+                        class="block md:inline-block px-4 py-3 no-underline text-yellow-100 hover:text-yellow-500 ">Prizes</a>
+                </li>
+                <li class="border-t md:border-none">
+                    <a href="#sponsors"
                         class="block md:inline-block px-4 py-3 no-underline text-yellow-100 hover:text-yellow-500 ">Sponsors</a>
                 </li>
 
@@ -77,7 +81,7 @@
 
             </ul>
         </nav>
-        <section class=" hero w-full  text-white">
+        <section id="home" class=" hero w-full  text-white">
             <div class="flex flex-col justify-center items-center md:flex-row m-4">
                 <div class="md:w-1/2 h-screen flex flex-col justify-center items-center m-4 ">
                     <div class="self-start p-4">
@@ -136,11 +140,11 @@
     </section>
 
 
-    <section class="h-screen">
+    <section class="h-screen w-full flex justify-center items-center">
         <div class="container p-5 ">
             <div id="venues" class="flex flex-col justify-center items-center w-full h-full mb-20 h-screen">
                 <div class="flex flex-col justify-center items-center ">
-                    <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-yellow-400 venue" id="ven">
+                    <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 venue-heading" id="ven">
                         Venue</h1>
                     <p class="lg:w-2/3 text-white" id="abtp">Government College Of
                         Engineering and Ceramic Technology(GCECT)</p>
@@ -162,77 +166,60 @@
 
     <!-- prizes -->
 
-    <section class="prizes">
-        <div class="container">
-            <div class="drop" style="--clr: #FF0F5B">
-                <div class="content">
-                    <h2>Winner!</h2>
-                    <!-- <a href="#">Read More</a> -->
-                </div>
-            </div>
-            <div class="drop" style="--clr: #BE01FE">
-                <div class="content">
-                    <h2>1st Runner Up</h2>
-                    <!-- <a href="#">Read More</a> -->
-                </div>
-            </div>
-            <div class="drop" style="--clr: #01B4FF">
-                <div class="content">
-                    <h2>2nd Runner Up</h2>
-                    <!-- <a href="#">Read More</a> -->
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="themes p-3 flex items-center justify-center">
+
+    <section id="themes" class="themes p-3 flex items-center justify-center">
         <!-- <div class="container px-5 py-24 mx-auto"> -->
         <div class="flex flex-col text-center w-full mb-20 justify-center items-center">
-            <h1 id="themes" class="sm:text-4xl text-3xl font-medium title-font mb-10 text-red-600">Themes
+            <h1 class="sm:text-4xl text-3xl font-medium title-font mb-10 text-red-400 theme-heading">Themes
             </h1>
 
             <div class="flex flex-wrap theme-container justify-center items-center mt-2">
 
-                <div class="card">
-                    <div class=image>
+                <div class="card flex">
+                    <div class="image">
                         <img src="/img/Environment.gif">
                     </div>
                     <div class="content">
                         <h3>Environment</h3>
                         <p>Be a hero.Save the world!</p>
                     </div>
+                    <h3 class="themes-card-heading">Environment</h3>
                 </div>
                 <div class="card">
-                    <div class=image>
+                    <div class="image">
                         <img href="#" src="/img/Education.gif">
                     </div>
                     <div class="content">
                         <h3>Education</h3>
                         <p>Help spread the light of knowledge </p>
                     </div>
+                    <h3 class="themes-card-heading">Education</h3>
                 </div>
                 <div class="card">
-                    <div class=image>
+                    <div class="image">
                         <img src="/img/Open Innovation.gif">
                     </div>
                     <div class="content">
                         <h3>Open Innovation</h3>
-                        <p>No boundaries here.Let your innovative mind run free</p>
+                        <p>No boundaries here. Let your innovative mind run free</p>
                     </div>
+                    <h3 class="themes-card-heading">Open Innovation</h3>
                 </div>
 
 
                 <div class="card">
-                    <div class=image>
+                    <div class="image">
                         <img src="/img/Health Care.gif">
                     </div>
                     <div class="content">
                         <h3>Medical and Healthcare:</h3>
                         <p>Tech and medicine can go hand in hand!</p>
                     </div>
+                    <h3 class="themes-card-heading">Healthcare </h3>
                 </div>
                 <div class="card">
-                    <div class=image>
+                    <div class="image">
                         <img src="/img/Peace.gif">
                     </div>
                     <div class="content">
@@ -240,16 +227,18 @@
                         <p>World peace is achievable, through you!
                         </p>
                     </div>
+                    <h3 class="themes-card-heading">Peace and Justice</h3>
                 </div>
 
                 <div class="card">
-                    <div class=image>
+                    <div class="image">
                         <img src="/img/hunger.gif">
                     </div>
                     <div class="content">
-                        <h3>Reduce Hunger:</h3>
+                        <h3>Reduce Hunger</h3>
                         <p>Solve the problem at the root of all others....poverty and hunger!</p>
                     </div>
+                    <h3 class="themes-card-heading">Reduce Hunger</h3>
                 </div>
             </div>
         </div>
@@ -257,12 +246,98 @@
 
     </section>
 
+    <section id="prizes" class="flex flex-wrap items-center justify-center">
+        <div class="artboard">
+            <div class="card">
+
+                <div class="card__side card__side--back">
+                    <div class="card__cover">
+                        <h4 class="card__heading">
+                            <span class="card__heading-span">10000/-</span>
+                        </h4>
+                    </div>
+                    <div class="card__details">
+                        <!-- <ul>
+                            <li>Advanced JS and CSS</li>
+
+                        </ul> -->
+                    </div>
+                </div>
+
+                <div class="card__side card__side--front">
+                    <div class="card__theme">
+                        <div class="card__theme-box">
+                            <p class="card__subject"></p>
+                            <p class="card__title">1st Prize</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="artboard">
+            <div class="card">
+
+                <div class="card__side card__side--back">
+                    <div class="card__cover">
+                        <h4 class="card__heading">
+                            <span class="card__heading-span">6000/-</span>
+                        </h4>
+                    </div>
+                    <div class="card__details">
+                        <!-- <ul>
+                            <li>Advanced JS and CSS</li>
+
+                        </ul> -->
+                    </div>
+                </div>
+
+                <div class="card__side card__side--front">
+                    <div class="card__theme">
+                        <div class="card__theme-box">
+                            <p class="card__subject"></p>
+                            <p class="card__title">2ndt Prize</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="artboard">
+            <div class="card">
+
+                <div class="card__side card__side--back">
+                    <div class="card__cover">
+                        <h4 class="card__heading">
+                            <span class="card__heading-span">4000/-</span>
+                        </h4>
+                    </div>
+                    <div class="card__details">
+                        <!-- <ul>
+                            <li>Advanced JS and CSS</li>
+
+                        </ul> -->
+                    </div>
+                </div>
+
+                <div class="card__side card__side--front">
+                    <div class="card__theme">
+                        <div class="card__theme-box">
+                            <p class="card__subject"></p>
+                            <p class="card__title">3rd Prize</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
     <section class="text-gray-600 mt-5">
         <div class="container px-3 py-02 mx-auto">
             <div id="timeline" class="flex flex-col text-center w-full mb-04">
-                <h1 class="sm:text-4xl text-3xl font-larger title-font mb-2 " id="tim">Timeline</h1>
+                <h1 class="sm:text-4xl text-3xl font-larger title-font my-5 " id="tim">Timeline</h1>
 
                 <section class="text-gray-600 body-font">
                     <div class="container px-5 mx-auto flex flex-wrap">
@@ -281,7 +356,7 @@
                                     </div>
                                     <div class="flex-grow pl-4">
                                         <h2 id="h2">
-                                            8 am</h2>
+                                            8 AM</h2>
                                         <p class="leading-relaxed">Let the Hackathon begin!</p>
                                     </div>
                                 </div>
@@ -298,7 +373,7 @@
                                     </div>
                                     <div class="flex-grow pl-4">
                                         <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">
-                                            1 A.M</h2>
+                                            1 PM</h2>
                                         <p class="leading-relaxed">Lunch Time.</p>
                                     </div>
                                 </div>
@@ -316,7 +391,7 @@
                                     </div>
                                     <div class="flex-grow pl-4">
                                         <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">
-                                            5 P.M</h2>
+                                            5 PM</h2>
                                         <p class="leading-relaxed">Snacks and Refreshments
                                         </p>
                                     </div>
@@ -335,7 +410,7 @@
                                     </div>
                                     <div class="flex-grow pl-4">
                                         <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">
-                                            6 pm </h2>
+                                            6 PM </h2>
                                         <p class="leading-relaxed">Hackathon ends</p>
                                     </div>
                                 </div>
@@ -350,14 +425,14 @@
                                     </div>
                                     <div class="flex-grow pl-4">
                                         <h2 class="font-medium title-font text-sm  text-black-600 tracking-wider">
-                                            6 pm to 7:30 pm</h2>
+                                            6 PM to 7:30 PM</h2>
                                         <p class="leading-relaxed">Evaluation of your projects And announcement of
                                             the results
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+                            <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 my-12 "
                                 src="https://plus.unsplash.com/premium_photo-1682140999442-e9e2a5f55be6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                 alt="step">
                         </div>
@@ -367,16 +442,19 @@
             </div>
         </div>
     </section>
-    <section id="sponsors flex flex-col justify-center items-center ">
+    <!-- <section id="mentor ">
+        <h1 class="mentor-heading text-red-400">Mentor</h1>
+    </section> -->
+    <section id="sponsors" class=" flex flex-col justify-center items-center ">
         <div class="">
             <div class="gold-sponsors flex flex-col justify-center items-center  p-2">
-                <h1 class="text-gray-500 text-3xl p-4">Gold Sponsors</h1>
+                <h1 class="text-yellow-400 text-3xl p-4">Gold Sponsors</h1>
                 <div class="w-60 m-4">
                     <img src="/img/Devfolio_Logo-White.png" alt="DEVFOLIO LOGO">
                 </div>
             </div>
             <div class="silver-sponsors flex flex-col justify-center items-center  p-2">
-                <h1 class="text-gray-500 text-3xl p-4">Silver Sponsors</h1>
+                <h1 class="text-yellow-400  text-3xl p-4">Silver Sponsors</h1>
                 <div class="w-60 m-4">
                     <img src="/img/square-white-logo-with-bottom-text-black-red.png" alt="">
 
@@ -384,10 +462,10 @@
             </div>
 
             <div class="bronze-sponsors  flex flex-col justify-center items-center p-5">
-                <h1 class="text-gray-500 text-3xl p-5">Bronze Sponsors</h1>
+                <h1 class="text-yellow-400  text-3xl p-5">Bronze Sponsors</h1>
                 <div class="flex flex-wrap justify-center items-center space-x-10">
-                    <div class="w-60 m-4"><img src="/img/Filecoin Coloured White Text.png" alt="FILECOIN LOGO"></div>
-                    <div class="w-60 m-4"> <img src="/img/Solana Dark.png" alt="SOLANA LOGO"></div>
+                    <!-- <div class="w-60 m-4"> <img src="/img/Solana Dark.png" alt="SOLANA LOGO"></div> -->
+                    <!-- <div class="w-60 m-4"><img src="/img/Filecoin Coloured White Text.png" alt="FILECOIN LOGO"></div> -->
                     <div class="w-60 m-4"><img src="/img/Polygon_Logo-White.png" alt="POLYGON LOGO"></div>
                     <div class="w-60 m-4">
                         <img src="/img/Replit-Dark-Background.png" alt="REPLIT LOGO">
@@ -397,6 +475,7 @@
             </div>
         </div>
     </section>
+
 
     <section id="FAQ">
         <!-- FAQ -->
@@ -581,8 +660,8 @@
 
     <section class="Team">
 
-        <div class="our-team flex flex-col items-center justify-center">
-            <h1 class="h1-text text-3xl p-4">
+        <div class="flex flex-col items-center justify-center">
+            <h1 class="h1-text text-3xl py-6 organiser-heading">
                 <i class="fa fa-users" aria-hidden="true"></i> Our Organisers
             </h1>
             <div class="flex flex-col justify-center items-center">
@@ -681,7 +760,6 @@
                             <a target="_blank" href="https://www.linkedin.com/in/arghyadip-dhara-68a3b51b7/"><i class="fa fa-linkedin"
                                     aria-hidden="true"></i></a>
                         </div>
-
                     </div>
                     <div class="box">
                         <div class="top-bar"></div>
@@ -746,7 +824,7 @@
             <br>
             <br>
             <div class="container flex flex-col items-center justify-center">
-                <h1 class="text-4xl  mb-4 text-red-900">Our Team:</h1>
+                <h1 class="text-4xl  mb-4  our-team">Our Team:</h1>
                 <div class="flex flex-wrap justify-center items-center">
                     <div class="box">
                         <div class="top-bar"></div>
