@@ -167,21 +167,13 @@ nav {
 
 .venue-heading,
 .organiser-heading,
-.our-team {
+.our-team, .prize-heading {
   color: gold;
   text-shadow: 2px 2px 1px rgba(0, 12, 174, 0.47);
 }
 
 
 /* prizes */
-/* Reset */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* html {
   font-size: 62.5%;
@@ -201,113 +193,103 @@ nav {
     font-size: 75%;
   }
 } */
-
-
-
-.artboard {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem;
-  height: 100%;
-  position: relative;
-}
-/* @media (max-width: 37.5em) {
-  .artboard {
-    padding: 1rem;
-  }
+/* #prizes{
+  height: 100vh;
 } */
 
+
+
 .card {
-  flex: initial;
+  /* perspective: 150rem; */
+  /* -moz-perspective: 150rem; */
+  margin: 20px;
   position: relative;
-  height: 15rem;
-  width: 18rem;
-  perspective: 200rem;
-  /* margin: 2rem; */
+  height: 20rem;
+  width: 22rem;
+}
+@media (max-width: 767px) {
+  .card {
+    width: 18rem;
+  }
 }
 .card__side {
-  height: 15rem;
+  height: 20rem;
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* We don't want to see the back part of the element. */
-  backface-visibility: hidden; /* We don't want to see the back part of the element. */
+  width: 100%;
+  backface-visibility: hidden;
   border-radius: 3px;
-  overflow: hidden; /* The image is overflowing the parent. */
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .card__side--front {
-  background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.7)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+  background-color: #fff;
 }
 .card__side--back {
-  background-color: #fff;
+  transform: rotateY(180deg);
+}
+.card__side--back-1 {
+  background-image: linear-gradient(to right bottom, #3a6186, #89253e);
+}
+.card__side--back-2 {
+  background-image: linear-gradient(to right bottom, #e96443, #904e95);
+}
+.card__side--back-3 {
+  background-image: linear-gradient(to right bottom, #ff00cc, #333399);
+}
+.card:hover .card__side--front {
   transform: rotateY(180deg);
 }
 .card:hover .card__side--back {
   transform: rotateY(0);
 }
-.card:hover .card__side--front {
-  transform: rotateY(-180deg);
-}
-.card__theme {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 54%;
-  width: 90%;
-  text-align: center;
-}
-.card__theme-box {
-  color: #fff;
-  margin-bottom: 8rem;
-}
-.card__subject {
-  font-family: "Inconsolata", monospace;
-  letter-spacing: 0.8rem;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-.card__title {
-  font-family: "VT323", monospace;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 100;
-}
-.card__cover {
-  position: relative;
+.card__picture {
   background-size: cover;
-  height: 14rem;
+  height: 12rem;
+  background-blend-mode: screen;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+}
+.card__picture--1 {
+  background-image: linear-gradient(to right bottom, #3a6186, #89253e);
+}
+.card__picture--2 {
+  background-image: linear-gradient(to right bottom, #e96443, #904e95);
+}
+.card__picture--3 {
+  background-image: linear-gradient(to right bottom, #ff00cc, #333399);
 }
 .card__heading {
-  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
   color: #fff;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 12rem;
+  right: 2rem;
   width: 75%;
 }
 .card__heading-span {
-  font-family: "VT323", monospace;
-  font-size: 4.2rem;
-  font-weight: 300;
-  text-transform: uppercase;
   padding: 1rem 1.5rem;
-  color: #fff;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.card__heading-span--1 {
+  background-image: linear-gradient(to right bottom, rgba(58, 97, 134, 0.85), rgba(137, 37, 62, 0.85));
+}
+.card__heading-span--2 {
+  background-image: linear-gradient(to right bottom, rgba(233, 100, 67, 0.85), rgba(144, 78, 149, 0.85));
+}
+.card__heading-span--3 {
+  background-image: linear-gradient(to right bottom, rgba(255, 0, 204, 0.85), rgba(51, 51, 153, 0.85));
 }
 .card__details {
-  font-family: "Inconsolata", monospace;
-  padding: 4rem 2rem;
+  padding: 3rem;
 }
 .card__details ul {
   list-style: none;
@@ -316,53 +298,87 @@ nav {
 }
 .card__details ul li {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 1rem;
 }
 .card__details ul li:not(:last-child) {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid color-grey light_2;
 }
-/* @media only screen and (max-width: 37.5em), only screen and (hover: none) {
-  .card {
-    height: auto;
-    border-radius: 3px;
-    background-color: #fff;
-    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
-  }
-  .card__side {
-    height: auto;
-    position: relative;
-    box-shadow: none;
-  }
-  .card__side--front {
-    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-  }
-  .card__side--back {
-    transform: rotateY(0);
-  }
-  .card:hover .card__side--front {
-    transform: rotateY(0);
-  }
-  .card__details {
-    padding: 3rem 2rem;
-  }
-  .card__theme {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translate(0);
-    width: 100%;
-    padding: 5rem 4rem 1.5rem 4rem;
-    text-align: right;
-  }
-  .card__theme-box {
-    margin-bottom: 1.5rem;
-  }
-  .card__title {
-    font-size: 4rem;
-  }
-} */
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__price-box {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8rem;
+}
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.card__price-value {
+  font-size: 3.5rem;
+  font-weight: 200;
+}
+.card__price-value sup {
+  font-size: 0.65em;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn:active {
+  transform: translateY(-1px);
+}
+.btn--white {
+  background-color: #fff;
+  color: #777777;
+}
+.btn--white::after {
+  background-color: #fff;
+}
+.btn--green {
+  background-color: #55c57a;
+  color: #fff;
+}
+.btn--green::after {
+  background-color: #55c57a;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}/*# sourceMappingURL=cardflip3.css.map */
 
 
 /* .prizes {

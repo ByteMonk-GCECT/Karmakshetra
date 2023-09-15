@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="port" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="port" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
     <link rel="icon" type="image/x-icon" href="/img/favicon2.ico">
     <!-- <link rel="stylesheet" href="hackathon.css"> -->
     <link rel="stylesheet" href="main.css">
@@ -12,8 +16,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
     <!-- <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
     <link rel=“stylesheet” href=“https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css”
@@ -246,90 +250,100 @@
 
     </section>
 
-    <section id="prizes" class="flex flex-wrap items-center justify-center">
-        <div class="artboard">
-            <div class="card">
-
-                <div class="card__side card__side--back">
-                    <div class="card__cover">
-                        <h4 class="card__heading">
-                            <span class="card__heading-span">10000/-</span>
-                        </h4>
-                    </div>
-                    <div class="card__details">
-                        <!-- <ul>
-                            <li>Advanced JS and CSS</li>
-
-                        </ul> -->
-                    </div>
-                </div>
-
-                <div class="card__side card__side--front">
-                    <div class="card__theme">
-                        <div class="card__theme-box">
-                            <p class="card__subject"></p>
-                            <p class="card__title">Winner!</p>
+    <section id="prizes" class="flex flex-col justify-center ">
+        <h1 class="prize-heading sm:text-4xl text-3xl font-medium title-font my-10 md:my-15 text-center">Prizes</h1>
+        <div class="p-5">
+            <div class="row flex flex-wrap justify-center items-center">
+                <div class="col-1-of-3">
+                    <div class="card">
+                         <div class="card__side card__side--front">
+                             <div class="card__picture card__picture--1">
+                                 &nbsp;
+                             </div>
+                             <h4 class="card__heading">
+                                 <span class="card__heading-span card__heading-span--1">1st Runner Up!</span>
+                             </h4>
+                             <div class="card__details">
+                                <ul>
+                                   
+                                </ul>
+                             </div>
+                        
+                         </div>
+                         <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">1st Runner Up!</p>
+                                    <p class="card__price-value">6000/-</p>
+                                </div>
+                                <!-- <a href="#" class="btn btn--white">Buy now!</a> -->
+                            </div>
+            
                         </div>
+                    
                     </div>
                 </div>
-
-            </div>
+        
+        
+                <div class="col-1-of-3">
+                        <div class="card">
+                                <div class="card__side card__side--front">
+                                    <div class="card__picture card__picture--2">
+                                        &nbsp;
+                                    </div>
+                                    <h4 class="card__heading">
+                                        <span class="card__heading-span card__heading-span--2">Winner!</span>
+                                    </h4>
+                                    <!-- <div class="card__details">
+                                      
+                                    </div> -->
+                               
+                                </div>
+                                <div class="card__side card__side--back card__side--back-2">
+                                   <div class="card__cta">
+                                       <div class="card__price-box">
+                                           <p class="card__price-only">Winner!</p>
+                                           <p class="card__price-value">10000/-</p>
+                                       </div>
+                                       <!-- <a href="#" class="btn btn--white">Buy now!</a> -->
+                                   </div>
+                   
+                               </div>
+                           
+                           </div>
+                </div>
+        
+        
+                <div class="col-1-of-3">
+                                     <div class="card">
+                         <div class="card__side card__side--front">
+                             <div class="card__picture card__picture--3">
+                                 &nbsp;
+                             </div>
+                             <h4 class="card__heading">
+                                 <span class="card__heading-span card__heading-span--3">2nd Runner Up!</span>
+                             </h4>
+                             <!-- <div class="card__details">
+                                <ul>
+                                
+                                </ul>
+                             </div> -->
+                        
+                         </div>
+                         <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">2nd Runner Up!</p>
+                                    <p class="card__price-value">4000/-</p>
+                                </div>
+                                <!-- <a href="#" class="btn btn--white">Buy now!</a> -->
+                            </div>
+            
+                        </div>
+                    
+                    </div>
+                </div>
         </div>
-        <div class="artboard">
-            <div class="card">
-
-                <div class="card__side card__side--back">
-                    <div class="card__cover">
-                        <h4 class="card__heading">
-                            <span class="card__heading-span">6000/-</span>
-                        </h4>
-                    </div>
-                    <div class="card__details">
-                        <!-- <ul>
-                            <li>Advanced JS and CSS</li>
-
-                        </ul> -->
-                    </div>
-                </div>
-
-                <div class="card__side card__side--front">
-                    <div class="card__theme">
-                        <div class="card__theme-box">
-                            <p class="card__subject"></p>
-                            <p class="card__title">1st Runner Up!</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="artboard">
-            <div class="card">
-
-                <div class="card__side card__side--back">
-                    <div class="card__cover">
-                        <h4 class="card__heading">
-                            <span class="card__heading-span">4000/-</span>
-                        </h4>
-                    </div>
-                    <div class="card__details">
-                        <!-- <ul>
-                            <li>Advanced JS and CSS</li>
-
-                        </ul> -->
-                    </div>
-                </div>
-
-                <div class="card__side card__side--front">
-                    <div class="card__theme">
-                        <div class="card__theme-box">
-                            <p class="card__subject"></p>
-                            <p class="card__title">2nd Runner Up!</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </section>
 
@@ -757,8 +771,8 @@
                         </div>
                         <div class="btn">
 
-                            <a target="_blank" href="https://www.linkedin.com/in/arghyadip-dhara-68a3b51b7/"><i class="fa fa-linkedin"
-                                    aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/arghyadip-dhara-68a3b51b7/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="box">
@@ -775,8 +789,8 @@
                         </div>
                         <div class="btn">
 
-                            <a target="_blank" href="https://www.linkedin.com/in/aniruddha-mukherjee-140840232/"><i class="fa fa-linkedin"
-                                    aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/aniruddha-mukherjee-140840232/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </div>
 
                     </div>
@@ -793,8 +807,8 @@
                         </div>
                         <div class="btn">
 
-                            <a target="_blank" href="https://www.linkedin.com/in/sk-abul-aman-449717240/"><i class="fa fa-linkedin"
-                                    aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/sk-abul-aman-449717240/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </div>
 
                     </div>
@@ -836,8 +850,8 @@
                         </div>
                         <div class="btn">
 
-                            <a target="_blank" href="https://www.linkedin.com/in/susmita-barua-a9692421a/"><i class="fa fa-linkedin"
-                                    aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/susmita-barua-a9692421a/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </div>
 
                     </div>
@@ -851,8 +865,8 @@
                         </div>
                         <div class="btn">
 
-                            <a target="_blank" href="https://www.linkedin.com/in/debojitdas2003/"><i class="fa fa-linkedin"
-                                    aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/debojitdas2003/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </div>
 
                     </div>
@@ -869,8 +883,8 @@
                         </div>
                         <div class="btn">
 
-                            <a target="_blank" href="https://www.linkedin.com/in/monami-chakraborty-cfa/"><i class="fa fa-linkedin"
-                                    aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/monami-chakraborty-cfa/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </div>
 
                     </div>
@@ -884,8 +898,8 @@
                         </div>
                         <div class="btn">
 
-                            <a target="_blank" href="https://www.linkedin.com/in/arjo-ghosh-23bb72254/"><i class="fa fa-linkedin"
-                                    aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/arjo-ghosh-23bb72254/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </div>
                     </div>
 
@@ -933,16 +947,17 @@
                     <h3>karmaskshetra@gcect.org.in</h3>
                 </div>
                 <div class="flex flex-col space-y-4 mr-8">
-                    <a href="https://www.facebook.com/profile.php?id=100076889941837"><iconify-icon class="hover:scale-150 duration-150 " width="32"
-                         icon="logos:facebook"></iconify-icon></a>
-                    <a href="https://twitter.com/gcect_tech"><iconify-icon class="hover:scale-150 duration-150 " width="32"
-                        icon="skill-icons:twitter"></iconify-icon></a>
-                    <a href="https://instagram.com/bytemonk"><iconify-icon class="hover:scale-150 duration-150 " width="32"
-                        icon="skill-icons:instagram" ></iconify-icon></a>
-                    <a href="https://www.linkedin.com/in/byte-monk-17241a222"><iconify-icon class="hover:scale-150 duration-150 " width="32"
-                        icon="skill-icons:linkedin"></iconify-icon></a>
-                    <a href="https://discord.gg/NMpbBxTQhC"><iconify-icon class="hover:scale-150 duration-150 " width="32"
-                        icon="skill-icons:discord"></iconify-icon></a>
+                    <a href="https://www.facebook.com/profile.php?id=100076889941837"><iconify-icon
+                            class="hover:scale-150 duration-150 " width="32" icon="logos:facebook"></iconify-icon></a>
+                    <a href="https://twitter.com/gcect_tech"><iconify-icon class="hover:scale-150 duration-150 "
+                            width="32" icon="skill-icons:twitter"></iconify-icon></a>
+                    <a href="https://instagram.com/bytemonk"><iconify-icon class="hover:scale-150 duration-150 "
+                            width="32" icon="skill-icons:instagram"></iconify-icon></a>
+                    <a href="https://www.linkedin.com/in/byte-monk-17241a222"><iconify-icon
+                            class="hover:scale-150 duration-150 " width="32"
+                            icon="skill-icons:linkedin"></iconify-icon></a>
+                    <a href="https://discord.gg/NMpbBxTQhC"><iconify-icon class="hover:scale-150 duration-150 "
+                            width="32" icon="skill-icons:discord"></iconify-icon></a>
                 </div>
 
 
