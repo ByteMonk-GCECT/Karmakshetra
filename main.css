@@ -5,9 +5,10 @@
   list-style-type: none;
   text-decoration: none;
 }
-html{
+
+/* html{
   overflow-x:hidden ;
-}
+} */
 
 /* body {
   background-image: linear-gradient(to right bottom, #5a2b44, #522d4a, #49304f, #3f3251, #353452, #303c5b, #294462, #204c68, #155d76, #086f81, #128188, #2c928b);
@@ -19,6 +20,13 @@ section:nth-child(odd) {
 
 /* Navbar */
 @media (max-width: 767px) {
+
+  /* homescreen image */
+  .hackaton-gif {
+    margin-top: -7rem;
+  }
+
+
   .navicon {
     width: 1.125em;
     height: .125em;
@@ -159,12 +167,11 @@ nav {
   line-height: 30px;
 }
 
-.third-page {
-  /* background-image: url(./img/bg4.jpg); */
+/* .third-page {
   background-color: #7b24c4;
   background-size: cover;
   background-attachment: fixed;
-}
+} */
 
 /* Venue */
 
@@ -347,7 +354,6 @@ nav {
 .card__price-box {
   text-align: center;
   color: #fff;
-  margin-bottom: 8rem;
 }
 
 .card__price-only {
@@ -364,9 +370,15 @@ nav {
   font-size: 0.65em;
 }
 
+.btn {
+  border-radius: 50%;
+}
+
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2);
+  color: #0A66C2;
+  animation: 0.2s ease-in-out;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
 }
 
 .btn:hover::after {
@@ -605,6 +617,7 @@ nav {
   border-radius: 15px;
 }
 
+
 .theme-container .card:hover {
   height: 20rem;
 
@@ -623,14 +636,40 @@ nav {
   /* box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.2); */
   z-index: 1;
 }
-@media (max-width: 501px) {
+
+@media (max-width: 500px) {
+  .karmakshetra {
+    font-size: 1.8rem;
+  }
+
+  .menu {
+    font-size: 1.2rem;
+    margin: 10px 0px;
+  }
+
+  .theme-container .card {
+    width: 15rem;
+    /* height: 12rem; */
+
+  }
+
   .theme-container .card .image {
-    left: 5px;
+    left: 4px;
+    width: 12rem;
     height: 18rem;
+  }
+
+  .themes-card-heading {
+    position: absolute;
+    bottom: 1.6rem;
+    /* left: 0; */
+    letter-spacing: 3px;
+    font-size: 1.1rem;
   }
 
 
 }
+
 .theme-container .card .image img {
   /* width: 10rem; */
   width: 15rem;
@@ -673,9 +712,9 @@ nav {
 .themes-card-heading {
   position: absolute;
   bottom: 1.6rem;
-  left: 70px;
+  left: 25px;
   letter-spacing: 3px;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
